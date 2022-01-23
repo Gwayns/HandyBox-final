@@ -1,0 +1,182 @@
+/* Nav Bar */
+
+img{
+    width: fit-content;
+    align-self: flex-start;
+}
+
+.flex-container{
+    border: 1px solid #000000;
+    display: flex;
+    width: 1440px;
+    height: 114px;
+    background-color: rgb(34, 40, 49, 0.82);
+    top: 0px;
+    left: 0px;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+#Handyboxlogo {
+      margin-left: 10%;
+    }
+
+.log {
+   
+        width: 209.9px;
+        height: 64.42px;
+        left: 988px;
+        top: 25px;
+        border: 1px solid #FFFFFF;
+        box-sizing: border-box;
+        border-radius: 5.79035px;
+        color: white;
+        font-size: 20.8959px;
+        line-height: 31px;
+        background: rgba(0, 0, 0, 0);
+    }    
+    
+.reg {
+       
+         width: 210.62px;
+         height: 64.42px;
+         left: 1214.38px;
+         top: 26px;
+         background: #FD7014;
+         border-radius: 5.79035px;
+         color: white;
+         font-size: 20.8959px;
+         line-height: 31px;
+        }
+
+
+/* content body */
+.body{
+    display: flex;
+    gap: 350px;
+}
+   
+.content{
+ 
+    background-image: url("Rectangle.png");
+    width: 845px; 
+    height: 578px; 
+    left: 373px; 
+    top: 272px;
+    text-align: center;
+    background-color: #23282D;
+}
+
+
+h1,h2,h3,h4, p {color: white;}
+
+h1 {
+    font-size: 45px;
+}
+
+h2 {
+    color: #FF9652; font-size: 28.87px;
+}
+h3 {
+    font-weight: 600;
+    font-size: 22px;line-height: 31px;
+    text-align: center;
+}
+
+p {
+    font-size: 21px;line-height: 31px;
+    text-align: center;
+}
+
+#p2 {
+    font-size: 15px;
+}
+
+.android, .ios {color: white; font-size: 21px; ;}
+
+.android {
+    width: 221px;
+    height: 83.55px;
+    left: 573px;
+    top: 626px;
+    background: #FD7014;
+    border: 1px solid #FFFFFF;
+    border-radius: 44.9187px;
+} 
+
+.ios {
+    width: 221px;
+    height: 83.55px;
+    left: 573px;
+    top: 626px;
+    background: #FD7014;
+    border: 1px solid #FFFFFF;
+    border-radius: 44.9187px;
+margin-left: 4%;}
+
+.header{
+  margin-top: 10%;
+}
+.content.header{
+    position: absolute;
+}
+ a{
+      color: white;
+      text-decoration: none;
+    }
+ a:hover{
+      color: #FD7014;
+      text-decoration: underline;
+    }
+
+
+  
+  body {
+      background-image: url("unsplash.png"); 
+      background-repeat: no-repeat; 
+      background-color: black;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    #telefonräv {position: absolute; top: 317px; left: 53px;}
+
+
+
+
+    .footer-basic {
+        background-color:#000000;
+        color:#ffffff;
+      }
+      
+      .footer-basic ul {
+        padding:0;
+        list-style:none;
+        text-align:center;
+        font-size:18px;
+        line-height:1.6;
+        margin-bottom:0;
+      }
+      
+      .footer-basic li {
+        padding:0 10px;
+      }
+      
+      .footer-basic ul a {
+        color:inherit;
+        text-decoration:none;
+        opacity:0.8;
+      }
+      
+      .footer-basic ul a:hover {
+        opacity:1;
+      }
+      
+    
+      .footer-basic .copyright {
+        margin-top:15px;
+        text-align:center;
+        font-size:13px;
+        color:#aaa;
+        margin-bottom:0;
+      }
