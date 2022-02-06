@@ -1,53 +1,159 @@
-/* Nav Bar */
-
-img{
-    width: fit-content;
-    align-self: flex-start;
+ /* effect*/
+ .typewriter {
+  font-family: 'Poppins';
+  font-size: 2.4em;
 }
 
-.flex-container{
-    border: 1px solid #000000;
-    display: flex;
-    width: 1440px;
-    height: 114px;
-    background-color: rgb(34, 40, 49, 0.82);
-    top: 0px;
-    left: 0px;
-    text-align: center;
-    align-items: center;
-    justify-content: space-around;
-  }
+.typewriter::after {
+  content: '|';
+  transition: ease-in-out 0.3s;
+  opacity: 1;
+  animation: cursor 1s infinite;
+}
 
-#Handyboxlogo {
-      margin-left: 10%;
-    }
+@keyframes cursor { 
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+/* slut style effect*/
 
-.log {
-   
-        width: 209.9px;
-        height: 64.42px;
-        left: 988px;
-        top: 25px;
-        border: 1px solid #FFFFFF;
-        box-sizing: border-box;
-        border-radius: 5.79035px;
-        color: white;
-        font-size: 20.8959px;
-        line-height: 31px;
-        background: rgba(0, 0, 0, 0);
-    }    
-    
-.reg {
+
+
+
+
+        body {
+          background-image: url("Tools.jpg"); 
+          background-position:center;
+          background-color: black;
+          background-size: cover;
+          font-family: Poppins;
+          
+        }
+
+ 
+
+
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+        * {
+          padding: 0;
+          margin: 0;
+          box-sizing: border-box;
+        }
+        
        
-         width: 210.62px;
-         height: 64.42px;
-         left: 1214.38px;
-         top: 26px;
-         background: #FD7014;
-         border-radius: 5.79035px;
+        header a {
+          text-decoration: none;
+        }
+        
+        header {
+          padding: 0 20px;
+          background: rgba(34, 40, 49, 0.82);
+          border: 1px solid #000000;
+          height: 100px;
+          display: flex;
+          justify-content: space-between;
+        }
+        
+        .brand {
+          font-weight: bold;
+          font-size: 18px;
+          display: flex;
+          align-items: center;
+        }
+        
+        ul {
+         
+          list-style: none;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: space-around;
+        }
+        
+        ul a {
+          color: white;
+        }
+        
+        ul li {
+          padding: 5px;
+          margin-left: 10px;
+          font-size: 17px;
+        }
+        
+        ul li:hover {
+          transform: scale(1.1);
+          transition: 0.3s;
+        }
+      
+        #login {
+          border: 1px solid #FFFFFF;
+          box-sizing: border-box;
+          border-radius: 5px;
+          color: white;
+          font-size: 15px;
+          line-height: 55px;
+          background: rgba(0, 0, 0, 0);
+          width: 150px;
+          text-align: center;
+        }
+        
+        #signup {
+        background: #FD7014;
+         border-radius: 5px;
          color: white;
-         font-size: 20.8959px;
-         line-height: 31px;
+         font-size: 15px;
+         line-height: 55px;
+         width: 150px; 
+         text-align: center;  
+        }
+    
+
+        #hamburger-icon {
+          margin: auto 0;
+          display: none;
+          cursor: pointer;
+        }
+        #hamburger-icon div {
+          width: 35px;
+          height: 3px;
+          background-color: white;
+          margin: 6px 0;
+          transition: 0.4s;
+        }
+        
+        .open .bar1 {
+          -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+          transform: rotate(-45deg) translate(-6px, 6px);
+        }
+        
+        .open .bar2 {
+          opacity: 0;
+        }
+        
+        .open .bar3 {
+          -webkit-transform: rotate(45deg) translate(-6px, -8px);
+          transform: rotate(45deg) translate(-6px, -8px);
+        }
+
+        .mobile-menu {
+          display: none;
+          position: absolute;
+          top: 100px;
+          left: 0;
+          height: calc(100vh - 50px);
+          width: 100%;
+        }
+        
+        .open .mobile-menu {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: flex-start;
+        }
+        
+        .mobile-menu li {
+          margin-bottom: 10px;
         }
 
 
@@ -55,51 +161,42 @@ img{
 .body{
     display: flex;
     gap: 350px;
+    text-align: center;
 }
    
 .content{
  
-    background-image: url("Rectangle.png");
+  background: #23282D;
+  border: 1px solid #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 27px;
+    background-position: center;
     width: 845px; 
     height: 578px; 
     left: 373px; 
     top: 272px;
     text-align: center;
-    background-color: #23282D;
 }
-
-
 h1,h2,h3,h4, p {color: white;}
 
-h1 {
-    font-size: 45px;
-}
-
 h2 {
-    color: #FF9652; font-size: 28.87px;
+    color: #FF9652; 
+    font-size: 28px;
 }
 h3 {
-    font-weight: 600;
-    font-size: 22px;line-height: 31px;
-    text-align: center;
+  font-size: 21px;
+  margin: 29px;
+  margin-bottom: 10px;
 }
 
-p {
-    font-size: 21px;line-height: 31px;
-    text-align: center;
-}
-
-#p2 {
-    font-size: 15px;
-}
 
 .android, .ios {color: white; font-size: 21px; ;}
 
 .android {
     width: 221px;
     height: 83.55px;
-    left: 573px;
-    top: 626px;
+    margin-top: 30px;
+    margin-bottom: 30px;
     background: #FD7014;
     border: 1px solid #FFFFFF;
     border-radius: 44.9187px;
@@ -108,75 +205,366 @@ p {
 .ios {
     width: 221px;
     height: 83.55px;
-    left: 573px;
-    top: 626px;
+    margin-top: 30px;
+    margin-bottom: 30px;
     background: #FD7014;
     border: 1px solid #FFFFFF;
     border-radius: 44.9187px;
-margin-left: 4%;}
+  margin-left: 4%;}
 
 .header{
   margin-top: 10%;
 }
-.content.header{
-    position: absolute;
+
+a{
+  color: white;
+  text-decoration: none;
 }
- a{
-      color: white;
-      text-decoration: none;
+a:hover{
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+p {
+  font-size: 19px;
+  text-align: center;
+}
+
+#p2 {
+  font-size: 14px;
+}
+
+  #telefonräv {
+    position: absolute; 
+    top: 317px; 
+    left: 53px;
+  }
+ 
+  .footer { 
+    display: flex;
+    justify-content: space-between;
+  }
+
+
+/* Breaking point 1 - iMac 1/mindre desktop */
+
+      @media (max-width: 1280px) { 
+         
+        #login {
+          border: 1px solid #FFFFFF;
+          box-sizing: border-box;
+          border-radius: 5px;
+          color: white;
+          font-size: 12px;
+          line-height: 35px;
+          background: rgba(0, 0, 0, 0);
+          width: 100px;
+          text-align: center;
+        }
+        
+        #signup {
+        background: #FD7014;
+         border-radius: 5px;
+         color: white;
+         font-size: 12px;
+         line-height: 35px;
+         width: 100px; 
+         text-align: center;       
+        }
+
+        ul li {
+          padding: 5px;
+          margin-left: 10px;
+          font-size: 13.5px;
+        }
+        
+      .content{
+
+          width: 847px; 
+          height: 509px; 
+          left: 332px; 
+          top: 188px;
+          text-align: center;
+          margin-left: -5%;
+          margin-right: 150px;      }
+      
+      
+      h1,h2,h3,h4, p {color: white;}
+      
+      .typewriter {
+        font-family: 'Poppins';
+        font-size: 2.2em;
+      }
+      h1 {
+          font-size: 40px;
+      }
+      
+      h2 {
+          color: #FF9652; font-size: 25.87px;
+      }
+      h3 {
+          font-weight: 600;
+          font-size: 19px;line-height: 28px;
+          text-align: center;
+      }
+      
+      p {
+          font-size: 17px;line-height: 27px;
+          text-align: center;
+      }
+      
+      #p2 {
+          font-size: 12px;
+      }
+      
+      .android, .ios {color: white; font-size: 18px; ;}
+      
+      .android {
+          width: 197px;
+          height: 59px;
+          left: 509px;
+          top: 438px;
+          background: #FD7014;
+          border: 1px solid #FFFFFF;
+          border-radius: 44.9187px;
+      } 
+      
+      .ios {
+          width: 200px;
+          height: 60px;
+          left: 732px;
+          top: 437px;
+          background: #FD7014;
+          border: 1px solid #FFFFFF;
+          border-radius: 45.5285px;
+      margin-left: 4%;
     }
- a:hover{
-      color: #FD7014;
-      text-decoration: underline;
+      
+      .header{
+        margin-top: 10%;
+      }
+      .content.header{
+          position: absolute;
+      }
+
+          #telefonräv {
+            width: 397px;
+            height: 403px;
+            left: 50px;
+            top: 310px;}
+          }
+
+/* Breaking point 2 - surfplatta/superliten desktop */
+
+ @media  (max-width: 888px) {
+           
+            header nav {
+              display: none;
+            }
+          
+            #hamburger-icon {
+              display: block;
+            }
+
+            .body{
+              margin-top: 150px;
+              display: flex;
+              gap: 250px;
+          }
+          .header{
+            margin-top: 5%;
+          }
+
+          .typewriter {
+            font-family: 'Poppins';
+            font-size: 2em;
+          }
+
+
+            #telefonräv {
+              width: 233px;
+              height: 284px;
+              left: 300px;
+              top: 800px;
+            }
+         
+        
+            
+            .content{
+       
+              
+              width: 561px; 
+              height: 580px; 
+              left: 136px; 
+              top: 287px;
+              text-align: center;
+
+
+              
+          }
+          h1 {
+            font-size: 22px;
+        }
+        
+        h2 {
+            color: #FF9652; font-size: 17.87px;
+        }
+        h3 {
+            font-weight: 600;
+            font-size: 15px;line-height: 13px;
+            text-align: center;
+        }
+        
+        p {
+            font-size: 12px;line-height: 27px;
+            text-align: center;
+        }
+        
+        #p2 {
+            font-size: 13px;
+        }
+        
+        .android, .ios {color: white; font-size: 18px;}
+        
+        .android {
+          width: 130px;
+          height: 57px;
+            background: #FD7014;
+            border: 1px solid #FFFFFF;
+            border-radius: 44.9187px;
+        }
+          
+        .ios {
+          width: 130px;
+          height: 57px;
+            background: #FD7014;
+            border: 1px solid #FFFFFF;
+            border-radius: 45.5285px;
+        margin-left: 4%;
+      }
+
+ 
     }
 
-
-  
-  body {
-      background-image: url("unsplash.png"); 
-      background-repeat: no-repeat; 
-      background-color: black;
-      font-family: 'Poppins', sans-serif;
-    }
-
-    #telefonräv {position: absolute; top: 317px; left: 53px;}
-
-
-
-
-    .footer-basic {
-        background-color:#000000;
-        color:#ffffff;
+/* Breaking point 3 - Stor telefon */
+@media  (max-width: 650px) {
+           
+            
+      header nav {
+        display: none;
       }
-      
-      .footer-basic ul {
-        padding:0;
-        list-style:none;
-        text-align:center;
-        font-size:18px;
-        line-height:1.6;
-        margin-bottom:0;
-      }
-      
-      .footer-basic li {
-        padding:0 10px;
-      }
-      
-      .footer-basic ul a {
-        color:inherit;
-        text-decoration:none;
-        opacity:0.8;
-      }
-      
-      .footer-basic ul a:hover {
-        opacity:1;
-      }
-      
     
-      .footer-basic .copyright {
-        margin-top:15px;
-        text-align:center;
-        font-size:13px;
-        color:#aaa;
-        margin-bottom:0;
+      #hamburger-icon {
+        display: block;
       }
+
+      .body{
+        margin-top: 150px;
+        display: block;
+     
+    }
+    .header{
+      margin-top: 5%;
+    }
+  
+      #telefonräv {
+        width: 233px;
+        height: 284px;
+        left: 100px;
+        top: 750px;
+        
+      }
+     
+
+        .typewriter {
+          font-family: 'Poppins';
+          font-size: 1.5em;
+        }
+      
+      .content{
+
+        width: 461px; 
+        height: 580px; 
+        left: 136px; 
+        top: 287px;
+        text-align: center;
+        margin-left: 8%;
+    }
+
+    h1 {
+      font-size: 22px;
+  }
+  
+  h2 {
+      color: #FF9652; font-size: 17.87px;
+  }
+  h3 {
+      font-weight: 600;
+      font-size: 15px;line-height: 13px;
+      text-align: center;
+  }
+
+  p {
+      font-size: 12px;line-height: 27px;
+      text-align: center;
+  }
+  
+  #p2 {
+      font-size: 10px;
+  }
+  
+  .android, .ios {color: white; font-size: 12px;}
+  
+  .android {
+      width: 80px;
+      height: 40px;
+      background: #FD7014;
+      border: 1px solid #FFFFFF;
+      border-radius: 44.9187px;
+  } 
+
+  .ios {
+    width: 80px;
+    height: 40px;
+      background: #FD7014;
+      border: 1px solid #FFFFFF;
+      border-radius: 45.5285px;
+  margin-left: 4%;
+  }
+
+}
+
+/* Breaking point 4 - liten telefon */
+@media  (max-width: 470px) {
+           
+ 
+
+  .body{
+    margin-top: 150px;
+    display:block;
+    margin-left: 0px;
+    padding-left: 0px;
+  
+ 
+}
+.header{
+  margin-top: 5%;
+}
+
+  #telefonräv {
+ 
+    display: none;
+  }
+  
+  .content{
+    width: 400px; 
+    height: 380px; 
+    left: 136px; 
+    top: 287px;
+    text-align: center;
+    margin-left: 26px;
+}
+
+
+
+}

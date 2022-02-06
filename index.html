@@ -1,0 +1,102 @@
+
+
+
+<!--- Jag har valt att fokusera på 2 webbdirektiv från WCAG 2.1
+
+    1 - 1.4.3 (AA)	Använd tillräcklig kontrast mellan text och bakgrund 
+    (Vilket jag enligt chrome-pluginet siteimprove uppfyller)
+
+    2 - 2.3.1 (A)	Orsaka inte epileptiska anfall genom blinkande 
+    (Vilket jag uppfyller genom att inte ha några störigt blinkande animationer.
+    Jag har en långsam enfärgad animation när man interagerar med hamburgermenyn - i lill-läge, 
+    och en som iof blinkar i textslutet på Huvud headern, men inte tillräckligt för att trigga ett anfall))
+
+Jag har även försökt uppfylla att alla bilder ska ha tydlig alt-text, men av någon anledning kan jag inte se texten när jag hovrar över bilderna :( 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=1200px, initial-scale=1.0">
+
+    <title>HandyBox</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+   <!---Nav baren  ----->
+
+   <header>
+    <div class="brand">
+        <img src="grönlilleräv.png" alt="logo bild på räv">
+        <a href="#bottom"><img src="Handyboxlogo.png" alt="HandyBox din cirkulära verktygslåda"></a>
+    </div>
+    <nav>
+      <ul id="effect">
+        <li><a href="/home">Hem</a> </li>
+        <li><a href="/Howdoesitwork">Så fungerar det</a></li>
+        <li><a href="/Contact">Kontakt</a></li>
+        <li><a href="/FAQ">FAQ</a></li>
+        <li id="login"><a href="/login" >Logga in</a></li>
+        <li id="signup"><a href="/signup">Registrera dig</a></li>
+      </ul>
+    </nav>
+    <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+        <ul class="mobile-menu">
+            <li><a href="/home">Hem</a></li>
+            <li><a href="/Howdoesitwork">Så fungerar det</a></li>
+            <li><a href="/Contact">Kontakt</a></li>
+            <li><a href="/FAQ">FAQ</a></li>
+            <li id="login"><a href="/login" >Logga in</a></li>
+            <li id="signup"><a href="/signup">Registera dig</a></li>
+        </ul>
+      </div>
+ </header>
+       
+
+        <br><br><br><br><br><br>
+
+          <!---Content  ----->
+        <div class="body">
+        <div class="telefonimg"><img id="telefonräv" src="telefonräv.png" alt="Bild på HandyBox app i en mobiltelefon"></div>
+        <div class="content">
+            <div class="header">
+                <h1 class="typewriter"> Välkommen till HandyBox!</h1>
+                <h2>Din cirkulära verktygslåda</h2>
+            </div>
+            <main>
+                <article>
+                    <h3>Betatesta vår app idag.</h3>
+                    <p>Bli först med att påverka och förbättra <br> vår app. Tillsammans gör vi den bättre</p>
+                    <button class="android">Android</button> 
+                    <button class="ios">iOS*</button>
+                    <p id="p2">*Länken är avsedd att öppnas på din iOS enhet.</p>
+            </article>
+        </main>
+    
+        <div>
+        </div>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+  
+<div class="footer-basic">
+    <footer id="bottom">
+        <ul class="list-inline">
+            <li class="list-inline-item"><a href="http://instagram.com">Instagram</a></li>
+            <li class="list-inline-item"><div><a href="http://facebook.com">Facebook</a></li>
+            <li class="list-inline-item"><div><a href="http://twitter.com">Twitter</a></li>
+        </ul>
+        <p class="copyright">copyright &copy;2022 <a href="#">Sandra Thorén</a> </p>
+    </footer>
+</div>
+
+<script src="index.js"></script>
+</body>
+</html>
